@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coverin - Marketplace Asuransi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Coverin</a>
+
+            <button id="hamburger-menu" aria-label="Buka Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span>Produk</span> <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-logged-out"><a href="login.html">Login</a></li>
+                <li class="nav-logged-out"><a href="signup.html" class="tombol-signup">Sign Up</a></li>
+
+                <li class="nav-logged-in">
+                    <a href="histori-pembelian.html" class="histori-link">Histori</a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" class="user-profil">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>Profil Saya</span>
+                    </a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Temukan Asuransi Terbaik Untuk Anda</h1>
+                <p>Bandingkan dan beli produk asuransi dari berbagai perusahaan terpercaya dengan mudah.</p>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Produk Terpercaya</h3>
+                        <p>Mitra asuransi sudah terverifikasi dan diawasi oleh OJK.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fas fa-file-signature"></i>
+                        <h3>Proses 100% Online</h3>
+                        <p>Proses membandingkan, membeli, hingga klaim dapat dilakukan secara digital.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <i class="fas fa-lock"></i>
+                        <h3>Transaksi Aman</h3>
+                        <p>proses pembayaran di platform ini dijamin aman.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners-section" class="products-alt">
+            <div class="container">
+                <h2 class="section-judul-center">Didukung oleh Mitra Terpercaya</h2>
+
+                <div class="partners-box">
+                    <div class="partners-grid">
+                        <div class="partner-logo"><img src="img/avrist-logo.jpg" alt="Logo Avrist"></div>
+                        <div class="partner-logo"><img src="img/good-doctor-logo.png" alt="Logo Good Doctor"></div>
+                        <div class="partner-logo"><img src="img/axa-logo.jpg" alt="Logo Axa"></div>
+                        <div class="partner-logo"><img src="img/simas-insurtech.jpeg" alt="Logo Sinar Mas Insurtech"></div>
+                        <div class="partner-logo"><img src="img/LGI-logo.png" alt="Logo LGI"></div>
+                        <div class="partner-logo"><img src="img/zurich-logo.webp" alt="Logo Zurich"></div>
+                        <div class="partner-logo"><img src="img/OONA - logo.webp" alt="Logo OONA"></div>
+                        <div class="partner-logo"><img src="img/Astra-logo.png" alt="Logo Astra"></div>
+                        <div class="partner-logo"><img src="img/Aca - logo.png" alt="Logo Aca"></div>
+                        <div class="partner-logo"><img src="img/Malacca - logo.png" alt="Logo Malacca"></div>
+                        <div class="partner-logo"><img src="img/simasjiwa.png" alt="Logo Sinar Mas Jiwa"></div>
+                        <div class="partner-logo"><img src="img/capital-life-2.png" alt="Logo Capital Life"></div>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <h2 class="section-judul-center">Layanan Kami</h2>
+            <section id="kesehatan" class="products-alt">
+                <div class="container">
+                    <h2 class="produk-kategori">Asuransi Kesehatan</h2>
+                    <div class="produk-grid lima-kolom">
+                        <div class="produk-grid-detail">
+                            <img src="img/avrist-logo.jpg" alt="Logo Avrist" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Health Starter - Plan 350</h3>
+                                <p class="produk-provider">Avrist</p>
+                                <a href="layanan-kesehatan.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/good-doctor-logo.png" alt="Logo Good Doctor" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Telemedicine Individual - Silver</h3>
+                                <p class="produk-provider">Good Doctor</p>
+                                <a href="layanan-kesehatan.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/axa-logo.jpg" alt="Logo Axa" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Asuransi Kesehatan AXA</h3>
+                                <p class="produk-provider">AXA</p>
+                                <a href="layanan-kesehatan.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/sinarmas-insurtech.png" alt="Logo Sinar Mas Insurtech" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Asuransi Kesehatan Sinar Mas</h3>
+                                <p class="produk-provider">Sinar Mas</p>
+                                <a href="layanan-kesehatan.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/LGI-logo.png" alt="Logo LGI" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Asuransi Kesehatan LGI</h3>
+                                <p class="produk-provider">LGI</p>
+                                <a href="layanan-kesehatan.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mobil" class="products">
+                <div class="container">
+                    <h2 class="produk-kategori">Asuransi Mobil</h2>
+                    <div class="produk-grid lima-kolom">
+                        <div class="produk-grid-detail">
+                            <img src="img/zurich-logo.webp" alt="Logo Zurich" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Autocillin All Risk</h3>
+                                <p class="produk-provider">Zurich</p>
+                                <a href="layanan-mobil.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/OONA - logo.webp" alt="Logo OONA" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">OONA Comprehensive</h3>
+                                <p class="produk-provider">OONA Insurance</p>
+                                <a href="layanan-mobil.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/Astra-logo.png" alt="Logo Astra" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Garda Oto Comprehensive</h3>
+                                <p class="produk-provider">Astra</p>
+                                <a href="layanan-mobil.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/Aca - logo.png" alt="Logo Aca" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">ACA Otomate Solitaire</h3>
+                                <p class="produk-provider">ACA Asurance</p>
+                                <a href="layanan-mobil.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/Malacca - logo.png" alt="Logo Malacca" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Malacca Trust All Risk</h3>
+                                <p class="produk-provider">Malacca Trust Insurance</p>
+                                <a href="layanan-mobil.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="jiwa" class="products-alt">
+                <div class="container">
+                    <h2 class="produk-kategori">Asuransi Jiwa</h2>
+                    <div class="produk-grid lima-kolom">
+                        <div class="produk-grid-detail">
+                            <img src="img/simasjiwa.webp" alt="Logo Sinar Mas Jiwa" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">SIJI Guard 1, Plan A</h3>
+                                <p class="produk-provider">Sinar Mas Jiwa</p>
+                                <a href="layanan-jiwa.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/simasjiwa.webp" alt="Logo Sinar Mas Jiwa" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">SIJI Guard 1, Plan B</h3>
+                                <p class="produk-provider">Sinar Mas Jiwa</p>
+                                <a href="layanan-jiwa.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/simasjiwa.webp" alt="Logo Sinar Mas Jiwa" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">SIJI Guard 1, Plan C</h3>
+                                <p class="produk-provider">Sinar Mas Jiwa</p>
+                                <a href="layanan-jiwa.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/capital-life-2.png" alt="Logo Capital Life" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Cakap Plus - Plan 50</h3>
+                                <p class="produk-provider">Capital Life</p>
+                                <a href="layanan-jiwa.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+
+                        <div class="produk-grid-detail">
+                            <img src="img/capital-life-2.png" alt="Logo Capital Life" class="grid-gambar">
+                            <div class="grid">
+                                <h3 class="produk-judul">Cakap Plus - Plan 100</h3>
+                                <p class="produk-provider">Capital Life</p>
+                                <a href="layanan-jiwa.html" class="tombol-detail">Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="login-popup" class="popup-overlay">
+            <div class="popup-box">
+                <span class="popup-close">&times;</span>
+                <i class="fas fa-triangle-exclamation popup-icon"></i>
+                <p><strong>Anda harus login terlebih dahulu untuk melihat detail produk.</strong></p>
+                <a href="login.html" class="tombol-signup">Login Sekarang</a>
+            </div>
+        </div>
+
+        <div id="logout-popup" class="popup-overlay">
+            <div class="popup-box">
+                <span class="popup-close">&times;</span>
+                <i class="fas fa-check-circle popup-icon success"></i>
+                <p><strong>Anda telah berhasil logout.</strong></p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-kolom">
+                    <h3 class="footer-logo">Coverin</h3>
+                    <p>Marketplace asuransi terbaik yang telah terpercaya untuk membantu Anda dalam menemukan perlindungan terbaik dengan mudah dan cepat.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bawah">
+                <p>&copy; 2025 Coverin. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

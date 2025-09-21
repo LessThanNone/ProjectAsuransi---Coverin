@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Asuransi Kesehatan - Coverin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Coverin</a>
+
+            <button id="hamburger-menu" aria-label="Buka Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span>Produk</span> <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-logged-out"><a href="login.html">Login</a></li>
+                <li class="nav-logged-out"><a href="signup.html" class="tombol-signup">Sign Up</a></li>
+
+                <li class="nav-logged-in">
+                    <a href="histori-pembelian.html" class="histori-link">Histori</a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" class="user-profil">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>Profil Saya</span>
+                    </a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pembelian-section">
+            <div class="container">
+                <h2 class="section-judul-center">Formulir Pembelian Asuransi Kesehatan</h2>
+                <p class="section-info">Silakan lengkapi data di bawah ini untuk menghitung premi Anda.</p>
+
+                <div class="pembelian-layout">
+                    <div class="form-pembelian-box">
+                        <form id="form-pembelian-kesehatan">
+                            <div class="form-input">
+                                <label for="nama-ktp">Nama Lengkap (sesuai KTP)</label>
+                                <input type="text" id="nama-ktp" placeholder="Masukkan nama lengkap Anda" required>
+                            </div>
+
+                            <div class="form-input">
+                                <label for="tanggal-lahir">Tanggal Lahir</label>
+                                <input type="date" id="tanggal-lahir" required>
+                            </div>
+
+                            <div class="form-input">
+                                <label for="pekerjaan">Pekerjaan</label>
+                                <input type="text" id="pekerjaan" placeholder="Contoh: Pengusaha" required>
+                            </div>
+
+                            <div class="form-input">
+                                <label>Apakah Anda merokok?</label>
+                                <div class="radio-group">
+                                    <input type="radio" id="merokok-ya" name="merokok" value="1" required>
+                                    <label for="merokok-ya">Ya</label>
+                                    <input type="radio" id="merokok-tidak" name="merokok" value="0" required>
+                                    <label for="merokok-tidak">Tidak</label>
+                                </div>
+                            </div>
+
+                            <div class="form-input">
+                                <label>Apakah Anda punya riwayat hipertensi?</label>
+                                <div class="radio-group">
+                                    <input type="radio" id="hipertensi-ya" name="hipertensi" value="1" required>
+                                    <label for="hipertensi-ya">Ya</label>
+                                    <input type="radio" id="hipertensi-tidak" name="hipertensi" value="0" required>
+                                    <label for="hipertensi-tidak">Tidak</label>
+                                </div>
+                            </div>
+
+                            <div class="form-input">
+                                <label>Apakah Anda punya riwayat diabetes?</label>
+                                <div class="radio-group">
+                                    <input type="radio" id="diabetes-ya" name="diabetes" value="1" required>
+                                    <label for="diabetes-ya">Ya</label>
+                                    <input type="radio" id="diabetes-tidak" name="diabetes" value="0" required>
+                                    <label for="diabetes-tidak">Tidak</label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="pembelian-estimnasi">
+                        <h3>Estimasi Premi Tahunan Anda</h3>
+
+                        <div class="pembelian-harga" id="pembelian-harga-kesehatan">
+                            Rp 0
+                        </div>
+
+                        <p class="pembelian-note">Premi akan dihitung setelah semua data terisi dengan lengkap.</p>
+                        <a href="checkout-pembelian.html" id="tombol-checkout-kesehatan" class="tombol-beli disabled">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Asuransi Mobil - Coverin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Coverin</a>
+
+            <button id="hamburger-menu" aria-label="Buka Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span>Produk</span> <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-logged-out"><a href="login.html">Login</a></li>
+                <li class="nav-logged-out"><a href="signup.html" class="tombol-signup">Sign Up</a></li>
+
+                <li class="nav-logged-in">
+                    <a href="histori-pembelian.html" class="histori-link">Histori</a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" class="user-profil">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>Profil Saya</span>
+                    </a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produk-head">
+            <div class="container">
+                <div class="produk-head-isi">
+                    <i class="fas fa-car provider-icon-detail"></i>
+                    <div class="produk-head-info">
+                        <h1>Car Insurance</h1>
+                        <p>Oleh <strong>Perusahaan Asuransi Mobil</strong></p>
+                    </div>
+
+                    <div class="produk-head-aksi">
+                        <a href="pembelian-mobil.html" class="tombol-beli">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="produk-detail-section">
+            <div class="container">
+                <h2 class="section-judul">Informasi Umum</h2>
+                <p class="section-info">Car Insurance adalah solusi perlindungan lengkap yang memberikan jaminan ganti rugi atau biaya perbaikan untuk kerusakan sebagian hingga keseluruhan pada kendaraan Anda akibat berbagai risiko.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-shield-halved"></i>
+                        <h4>Tipe Jaminan</h4>
+                        <p>Comprehensive / All Risk</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-calendar-check"></i>
+                        <h4>Usia Kendaraan</h4>
+                        <p>Hingga 10 tahun</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-tools"></i>
+                        <h4>Fitur Unggulan</h4>
+                        <p>Aplikasi Klaim Mobile & Bantuan Darurat 24 Jam</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="produk-detail-section-alt">
+            <div class="container">
+                <h2 class="section-judul">Manfaat & Jaminan Utama</h2>
+                <ul class="list-manfaat">
+                    <li><i class="fas fa-check-circle"></i> <strong>Jaminan Kerusakan & Kehilangan:</strong> Memberikan ganti rugi untuk perbaikan kerusakan sebagian (penyok, lecet) hingga kerusakan total akibat kecelakaan, perbuatan jahat, atau pencurian.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Tanggung Jawab Hukum Pihak Ketiga:</strong> Memberikan jaminan ganti rugi atas tuntutan dari pihak ketiga yang disebabkan oleh kendaraan Anda.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Kecelakaan Diri:</strong> Memberikan santunan untuk pengemudi dan penumpang jika terjadi kematian atau cacat tetap akibat kecelakaan.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Layanan Darurat 24 Jam (ERA):</strong> Bantuan darurat di jalan untuk gangguan ringan, termasuk layanan mobil derek.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Perluasan Jaminan Opsional:</strong> Tersedia perlindungan tambahan untuk risiko bencana alam (banjir, gempa bumi), kerusuhan, dan terorisme.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="produk-detail-section">
+            <div class="container">
+                <h2 class="section-judul">Proses Klaim</h2>
+                <p class="section-info">Proses klaim dirancang agar mudah dan cepat, dapat dilakukan melalui berbagai cara sesuai kenyamanan Anda.</p>
+                <ol class="list-claim-info">
+                    <li><strong>Melalui Aplikasi Mobile Claim:</strong> Cara termudah adalah dengan mengunduh aplikasi, mengisi formulir, dan mengunggah dokumen seperti foto KTP, SIM, STNK, serta foto kerusakan langsung dari smartphone Anda.</li>
+                    <li><strong>Menghubungi Customer Service:</strong> Anda dapat melaporkan kejadian dan memulai proses klaim dengan menghubungi call center 24 jam di 1500-456 atau melalui email dan WhatsApp.</li>
+                    <li><strong>Datang ke Kantor Cabang:</strong> Anda juga bisa datang langsung ke kantor cabang terdekat dengan membawa semua dokumen persyaratan yang diperlukan.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="produk-detail-section-alt">
+            <div class="container">
+                <h2 class="section-judul">Syarat & Ketentuan Penting</h2>
+                <ul class="list-syarat">
+                    <li>
+                        <i class="fas fa-file-invoice"></i>
+                        <strong>Dokumen Wajib Klaim:</strong> Setiap proses klaim wajib menyertakan fotokopi polis, KTP, STNK kendaraan, dan SIM pengemudi yang masih berlaku.
+                    </li>
+                    <li>
+                        <i class="fas fa-car"></i>
+                        <strong>Penggunaan Kendaraan:</strong> Jaminan polis ini hanya berlaku untuk penggunaan kendaraan pribadi dan bukan untuk tujuan komersial (misalnya, taksi online, mobil sewaan).
+                    </li>
+                    <li>
+                        <i class="fas fa-id-card"></i>
+                        <strong>Kewajiban SIM Pengemudi:</strong> Kendaraan harus dikemudikan oleh seseorang yang memiliki Surat Izin Mengemudi (SIM A) yang sah dan masih berlaku pada saat terjadinya kerugian.
+                    </li>
+                    <li>
+                        <i class="fas fa-triangle-exclamation"></i>
+                        <strong>Pengecualian Utama:</strong> Polis tidak akan menanggung kerugian yang disebabkan oleh tindakan sengaja, pelanggaran hukum (seperti menerobos lampu merah), atau saat pengemudi berada di bawah pengaruh alkohol/narkoba.
+                    </li>
+                    <li>
+                        <i class="fas fa-money-bill-wave"></i>
+                        <strong>Biaya Risiko Sendiri (Own Risk):</strong> Setiap klaim yang disetujui akan dikenakan biaya risiko sendiri (deductible) sebesar Rp 300.000 per kejadian, yang ditanggung oleh pemilik polis.
+                    </li>   
+                </ul>
+            </div>
+        </section>
+    </main>
+
+        <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-kolom">
+                    <h3 class="footer-logo">Coverin</h3>
+                    <p>Marketplace asuransi terbaik yang telah terpercaya untuk membantu Anda dalam menemukan perlindungan terbaik dengan mudah dan cepat.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bawah">
+                <p>&copy; 2025 Coverin. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

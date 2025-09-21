@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Pembelian - Coverin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Coverin</a>
+
+            <button id="hamburger-menu" aria-label="Buka Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span>Produk</span> <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-logged-out"><a href="login.html">Login</a></li>
+                <li class="nav-logged-out"><a href="signup.html" class="tombol-signup">Sign Up</a></li>
+
+                <li class="nav-logged-in">
+                    <a href="histori-pembelian.html" class="histori-link">Histori</a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" class="user-profil">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>Profil Saya</span>
+                    </a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pembelian-section">
+            <div class="container">
+                <h2 class="section-judul-center">Checkout Pembayaran</h2>
+                <p class="section-info">Harap periksa kembali detail pesanan Anda sebelum menyelesaikan pembayaran.</p>
+                
+                <div class="pembelian-layout">
+                    <div class="form-pembelian-box">
+                        <div id="payment-error" class="message error" style="display: none;">
+                            Harap pilih metode pembayaran terlebih dahulu.
+                        </div>
+
+                        <h3>Pilih Metode Pembayaran</h3>
+                        <div id="metode-pembayaran" class="form-input">
+                            <div class="checkout-grup">
+                                <input type="radio" id="bca-va" name="payment" value="bca">
+                                <label for="bca-va">
+                                    <div class="logo-container">
+                                        <img src="img/Bca-logo.png" alt="Logo BCA" class="logo-pembayaran">
+                                    </div>
+                                    BCA Virtual Account
+                                </label>
+                            </div>
+
+                            <div class="checkout-grup">
+                                <input type="radio" id="mandiri-va" name="payment" value="mandiri">
+                                <label for="mandiri-va">
+                                    <div class="logo-container">
+                                        <img src="img/Mandiri-logo.png" alt="Logo BCA" class="logo-pembayaran">
+                                    </div>
+                                    Mandiri Virtual Account
+                                </label>
+                            </div>
+
+                            <div class="checkout-grup">
+                                <input type="radio" id="kredit" name="payment" value="credit">
+                                <label for="kredit">
+                                    <div class="logo-container">
+                                        <img src="img/Kredit-logo.png" alt="Logo Kredit" class="logo-pembayaran">
+                                    </div>
+                                    Kartu Kredit / Debit
+                                </label>
+                            </div>
+
+                            <div class="checkout-grup">
+                                <input type="radio" id="gopay" name="payment" value="gopay">
+                                <label for="gopay">
+                                    <div class="logo-container">
+                                        <img src="img/gopay-logo.jpg" alt="Logo Gopay" class="logo-pembayaran">
+                                    </div>
+                                    Gopay
+                                </label>
+                            </div>
+
+                            <div class="checkout-grup">
+                                <input type="radio" id="dana" name="payment" value="dana">
+                                <label for="dana">
+                                    <div class="logo-container">
+                                        <img src="img/dana-logo.png" alt="Logo Dana" class="logo-pembayaran">
+                                    </div>
+                                    Dana
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pembelian-estimnasi">
+                        <h3>Ringkasan Pembelian</h3>
+
+                        <div class="detail-pesanan">
+                            <span>Produk Asuransi:</span>
+                            <strong id="checkout-nama-produk">Memuat...</strong>
+                        </div>
+
+                        <div class="detail-pesanan">
+                            <span>Total Premi:</span>
+                            <div class="pembelian-harga" id="checkout-harga-premi">
+                                Rp 0
+                            </div>
+                        </div>
+
+                        <button id="tombol-bayar" class="tombol-beli">Bayar Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

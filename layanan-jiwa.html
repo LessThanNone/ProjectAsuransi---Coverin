@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Asuransi Jiwa - Coverin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Coverin</a>
+
+            <button id="hamburger-menu" aria-label="Buka Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span>Produk</span> <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-logged-out"><a href="login.html">Login</a></li>
+                <li class="nav-logged-out"><a href="signup.html" class="tombol-signup">Sign Up</a></li>
+
+                <li class="nav-logged-in">
+                    <a href="histori-pembelian.html" class="histori-link">Histori</a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" class="user-profil">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>Profil Saya</span>
+                    </a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produk-head">
+            <div class="container">
+                <div class="produk-head-isi">
+                    <i class="fas fa-hand-holding-heart provider-icon-detail""></i>
+                    <div class="produk-head-info">
+                        <h1>Life Insurance</h1>
+                        <p>Oleh <strong>Perusahaan Asuransi Jiwa</strong></p>
+                    </div>
+
+                    <div class="produk-head-aksi">
+                        <a href="pembelian-jiwa.html" class="tombol-beli">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="produk-detail-section">
+            <div class="container">
+                <h2 class="section-judul">Informasi Umum</h2>
+                <p class="section-info">Life Insurance adalah produk asuransi jiwa berjangka yang memberikan perlindungan finansial dari risiko meninggal dunia, baik akibat kecelakaan maupun bukan, dengan premi yang dibayarkan sekaligus di awal.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-hand-holding-dollar"></i>
+                        <h4>Tipe Produk</h4>
+                        <p>Asuransi Jiwa Berjangka</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-calendar-days"></i>
+                        <h4>Usia Masuk</h4>
+                        <p>6 Bulan - 69 Tahun</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-file-medical"></i>
+                        <h4>Tanpa Pemeriksaan Medis</h4>
+                        <p>Pengajuan mudah tanpa perlu cek medis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="produk-detail-section-alt">
+            <div class="container">
+                <h2 class="section-judul">Manfaat & Jaminan Utama</h2>
+                <ul class="list-manfaat">
+                    <li>
+                        <i class="fas fa-check-circle"></i> 
+                        <strong>Jaminan Kematian 100%:</strong> Memberikan 100% Uang Pertanggungan kepada ahli waris jika tertanggung meninggal dunia karena sebab apapun (sakit atau kecelakaan).
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i> 
+                        <strong>Tanpa Pemeriksaan Medis:</strong> Pengajuan asuransi dapat dilakukan dengan mudah tanpa perlu melalui proses pemeriksaan medis (*medical check-up*).
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i> 
+                        <strong>Premi Tunggal:</strong> Cukup bayar premi satu kali di muka untuk mendapatkan perlindungan penuh selama satu tahun.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i> 
+                        <strong>Usia Masuk Fleksibel:</strong> Perlindungan tersedia untuk rentang usia yang luas, mulai dari usia 6 bulan hingga 69 tahun.
+                    </li>
+                    <li>
+                        <i class="fas fa-check-circle"></i> 
+                        <strong>Masa Peninjauan Polis (Free Look Period):</strong> Jaminan uang kembali 100% jika Anda membatalkan polis dalam 14 hari setelah diterima karena tidak setuju dengan syarat dan ketentuan.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="produk-detail-section">
+            <div class="container">
+                <h2 class="section-judul">Proses Klaim</h2>
+                <p class="section-info">Proses klaim dirancang agar mudah dan cepat, dapat dilakukan melalui berbagai cara sesuai kenyamanan Anda.</p>
+                <ol class="list-claim-info">
+                    <li>
+                        <strong>Melalui Aplikasi Life Insurance Access:</strong> Cara yang paling direkomendasikan adalah mengajukan klaim langsung melalui aplikasi resmi untuk proses yang lebih cepat dan terpandu.
+                    </li>
+                    <li>
+                        <strong>Melalui Email:</strong> Sebagai alternatif, Anda dapat mengirimkan seluruh dokumen klaim dalam bentuk *softcopy* ke alamat email <strong>claim.admin@asuransijiwa.co.id</strong>.
+                    </li>
+                    <li>
+                        <strong>Kelengkapan Dokumen:</strong> Pastikan Anda melengkapi formulir klaim dan melampirkan semua dokumen yang diperlukan, seperti sertifikat asuransi, surat keterangan meninggal dunia, KTP, dan Kartu Keluarga, dalam waktu maksimal 90 hari sejak tanggal meninggal dunia.
+                    </li>
+                    <li>
+                        <strong>Proses Persetujuan:</strong> Setelah semua dokumen diterima lengkap, penanggung akan memberikan konfirmasi persetujuan atau penolakan klaim dalam waktu maksimal 14 hari kerja.
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="produk-detail-section-alt">
+            <div class="container">
+                <h2 class="section-judul">Syarat & Ketentuan Penting</h2>
+                <ul class="list-syarat">
+                    <li>
+                        <i class="fas fa-heart-circle-check"></i>
+                        <strong>Deklarasi Kesehatan Jujur:</strong> Anda wajib memberikan keterangan yang jujur dan akurat mengenai kondisi kesehatan. Ketidakjujuran dapat menyebabkan pembatalan polis.
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-check"></i>
+                        <strong>Masa Peninjauan Polis (Free Look Period):</strong> Anda berhak membatalkan polis dalam 14 hari sejak polis diterima jika tidak setuju dengan isinya, dengan jaminan premi kembali penuh.
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-times"></i>
+                        <strong>Polis Tidak Aktif (Lapse):</strong> Jika premi tidak dibayarkan melewati masa tenggang, polis akan menjadi tidak aktif (lapse) dan manfaat tidak dapat diklaim.
+                    </li>
+                    <li>
+                        <i class="fas fa-triangle-exclamation"></i>
+                        <strong>Pengecualian Utama:</strong> Manfaat tidak berlaku jika meninggal dunia akibat tindakan ilegal, bunuh diri (dalam 1 tahun pertama), atau aktivitas berbahaya yang dikecualikan dalam polis.
+                    </li>
+                    <li>
+                        <i class="fas fa-file-circle-xmark"></i>
+                        <strong>Berakhirnya Asuransi:</strong> Pertanggungan akan berakhir jika tertanggung meninggal dunia, masa asuransi selesai, polis dibatalkan, atau manfaat telah dibayarkan.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-kolom">
+                    <h3 class="footer-logo">Coverin</h3>
+                    <p>Marketplace asuransi terbaik yang telah terpercaya untuk membantu Anda dalam menemukan perlindungan terbaik dengan mudah dan cepat.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bawah">
+                <p>&copy; 2025 Coverin. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

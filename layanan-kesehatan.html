@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Asuransi Kesehatan - Coverin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Coverin</a>
+
+            <button id="hamburger-menu" aria-label="Buka Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span>Produk</span> <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-logged-out"><a href="login.html">Login</a></li>
+                <li class="nav-logged-out"><a href="signup.html" class="tombol-signup">Sign Up</a></li>
+
+                <li class="nav-logged-in">
+                    <a href="histori-pembelian.html" class="histori-link">Histori</a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" class="user-profil">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>Profil Saya</span>
+                    </a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="produk-head">
+            <div class="container">
+                <div class="produk-head-isi">
+                    <i class="fas fa-shield-heart provider-icon-detail"></i>
+
+                    <div class="produk-head-info">
+                        <h1>Health Insurance</h1>
+                        <p>Oleh <strong>Perusahaan Asuransi Kesehatan</strong></p>
+                    </div>
+
+                    <div class="produk-head-aksi">
+                        <a href="pembelian-kesehatan.html" class="tombol-beli">Beli Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="produk-detail-section">
+            <div class="container">
+                <h2 class="section-judul">Informasi Umum</h2>
+                <p class="section-info">Health Insurance adalah produk asuransi perorangan berjangka satu tahun yang dapat diperbarui. Produk ini dirancang untuk memberikan perlindungan komprehensif saat Anda membutuhkan perawatan di rumah sakit, dilengkapi dengan kemudahan fasilitas </p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-user-doctor"></i>
+                        <h4>Tipe Asuransi</h4>
+                        <p>Asuransi Perorangan (jangka 1 tahun)</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h4>Usia Masuk</h4>
+                        <p>18 - 55 tahun</p>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-wallet"></i>
+                        <h4>Metode Klaim</h4>
+                        <p>Cashless & Reimbursement</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="produk-detail-section-alt">
+            <div class="container">
+                <h2 class="section-judul">Manfaat & Jaminan Utama</h2>
+                <ul class="list-manfaat">
+                    <li><i class="fas fa-check-circle"></i> <strong>Manfaat Kamar Rawat Inap Harian:</strong> Jaminan biaya kamar selama perawatan di rumah sakit.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Manfaat Pembedahan:</strong> Perlindungan untuk berbagai jenis tindakan operasi sesuai plan yang dipilih.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Manfaat Biaya Medis:</strong> Mencakup aneka biaya perawatan yang diperlukan selama rawat inap.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Manfaat Rawat Jalan:</strong> Termasuk jaminan untuk konsultasi dan perawatan tanpa perlu menginap.</li>
+                    <li><i class="fas fa-check-circle"></i> <strong>Bonus Tanpa Klaim (No Claim Bonus):</strong> Manfaat tambahan yang diberikan jika tidak ada klaim selama periode polis.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section class="produk-detail-section">
+            <div class="container">
+                <h2 class="section-judul">Proses Klaim</h2>
+                <p class="section-info">Proses klaim dirancang agar mudah dan cepat, dapat dilakukan melalui berbagai cara sesuai kenyamanan Anda.</p>
+                <ol class="list-claim-info">
+                    <li><strong>Klaim Cashless:</strong> Cukup tunjukkan kartu peserta Anda di rumah sakit rekanan Health Insurance. Pihak rumah sakit akan langsung berkoordinasi dengan kami untuk penjaminan biaya. Anda hanya perlu membayar selisih biaya (jika ada) sebelum meninggalkan rumah sakit.</li>
+                    <li><strong>Klaim Reimbursement:</strong> Untuk perawatan di rumah sakit non-rekanan, Anda dapat mengajukan penggantian dana. Cukup lengkapi formulir klaim dan sertakan dokumen pendukung seperti kuitansi asli. Pembayaran akan diproses selambat-lambatnya 14 hari kerja setelah dokumen diterima lengkap oleh kami.</li>
+                    <li><strong>Klaim Bonus Tanpa Klaim (No Claim Bonus):</strong> Jika Anda tidak melakukan klaim selama periode polis, Anda berhak mendapatkan bonus. Cukup ajukan dengan formulir klaim dan bukti identitas, dan manfaat akan dibayarkan dalam 9 hari kerja.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="produk-detail-section-alt">
+            <div class="container">
+                <h2 class="section-judul">Syarat & Ketentuan Penting</h2>
+                <ul class="list-syarat">
+                    <li><i class="fas fa-file-contract"></i> <strong>Mata Uang & Kewarganegaraan:</strong> Polis hanya tersedia dalam mata uang Rupiah dan berlaku untuk Warga Negara Indonesia (WNI).</li>
+                    <li><i class="fas fa-map-marker-alt"></i> <strong>Cakupan Geografis:</strong> Manfaat hanya berlaku untuk perawatan yang terjadi di dalam wilayah Indonesia.</li>
+                    <li><i class="fas fa-clock"></i> <strong>Masa Tunggu:</strong> Terdapat masa tunggu 30 hari untuk penyakit, 12 bulan untuk 21 penyakit khusus, dan tidak ada masa tunggu untuk kecelakaan.</li>
+                    <li><i class="fas fa-hospital"></i> <strong>Definisi Rumah Sakit:</strong> Perlindungan hanya berlaku di institusi yang berlisensi resmi sebagai rumah sakit (tidak termasuk panti jompo atau sejenisnya).</li>
+                    <li><i class="fas fa-briefcase-medical"></i> <strong>Pelengkap BPJS:</strong> Produk ini dapat berfungsi sebagai fasilitas pelengkap BPJS Kesehatan, dengan manfaat santunan harian hingga Rp 500.000/hari jika biaya telah ditanggung penuh oleh BPJS.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-kolom">
+                    <h3 class="footer-logo">Coverin</h3>
+                    <p>Marketplace asuransi terbaik yang telah terpercaya untuk membantu Anda dalam menemukan perlindungan terbaik dengan mudah dan cepat.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Produk</h4>
+                    <ul>
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-kolom">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bawah">
+                <p>&copy; 2025 Coverin. Semua Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

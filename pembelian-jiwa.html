@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelian Asuransi Jiwa - Coverin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Coverin</a>
+
+            <button id="hamburger-menu" aria-label="Buka Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span>Produk</span> <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-logged-out"><a href="login.html">Login</a></li>
+                <li class="nav-logged-out"><a href="signup.html" class="tombol-signup">Sign Up</a></li>
+
+                <li class="nav-logged-in">
+                    <a href="histori-pembelian.html" class="histori-link">Histori</a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" class="user-profil">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>Profil Saya</span>
+                    </a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pembelian-section">
+            <div class="container">
+                <h2 class="section-judul-center">Formulir Pembelian Asuransi Jiwa</h2>
+                <p class="section-info">Silakan lengkapi data diri Anda untuk menghitung estimasi premi.</p>
+                
+                <div class="pembelian-layout">
+                    <div class="form-pembelian-box">
+                        <form id="form-pembelian-jiwa">
+                            <div class="form-input">
+                                <label for="nama-ktp-jiwa">Nama Lengkap (sesuai KTP)</label>
+                                <input type="text" id="nama-ktp-jiwa" placeholder="Masukkan nama lengkap Anda" required>
+                            </div>
+
+                            <div class="form-input">
+                                <label for="tanggal-lahir-jiwa">Tanggal Lahir</label>
+                                <input type="date" id="tanggal-lahir-jiwa" required>
+                            </div>
+
+                            <div class="form-input">
+                                <label for="besaran-pertanggungan">Pilih Besaran Pertanggungan (Rp)</label>
+                                <select id="besaran-pertanggungan" required class="form-input input" style="width: 100%; padding: 12px; font-size: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+                                    <option value="">-- Pilih Opsi --</option>
+                                    <option value="1000000000">1.000.000.000</option>
+                                    <option value="2000000000">2.000.000.000</option>
+                                    <option value="3500000000">3.500.000.000</option>
+                                    <option value="5000000000">5.000.000.000</option>
+                                    <option value="10000000000">10.000.000.000</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="pembelian-estimnasi">
+                        <h3>Estimasi Premi Bulanan Anda</h3>
+
+                        <div class="pembelian-harga" id="pembelian-harga-jiwa">
+                            Rp 0
+                        </div>
+
+                        <p class="pembelian-note">Premi akan dihitung setelah semua data terisi dengan lengkap.</p>
+                        <a href="checkout-pembelian.html" id="tombol-checkout-jiwa" class="tombol-beli disabled">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>

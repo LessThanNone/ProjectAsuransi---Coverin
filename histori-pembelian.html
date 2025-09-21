@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Histori Pembelian - Coverin</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html" class="logo">Coverin</a>
+
+            <button id="hamburger-menu" aria-label="Buka Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">
+                        <span>Produk</span> <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html#kesehatan">Asuransi Kesehatan</a></li>
+                        <li><a href="index.html#mobil">Asuransi Mobil</a></li>
+                        <li><a href="index.html#jiwa">Asuransi Jiwa</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-logged-out"><a href="login.html">Login</a></li>
+                <li class="nav-logged-out"><a href="signup.html" class="tombol-signup">Sign Up</a></li>
+
+                <li class="nav-logged-in">
+                    <a href="histori-pembelian.html" class="histori-link">Histori</a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" class="user-profil">
+                        <i class="fas fa-user-circle user-icon"></i>
+                        <span>Profil Saya</span>
+                    </a>
+                </li>
+
+                <li class="nav-logged-in">
+                    <a href="#" id="logout-button">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pembelian-section">
+            <div class="container">
+                <h2 class="section-judul-center">Riwayat Pembelian Anda</h2>
+
+                <div class="histori-pembelian-container">
+                    <table id="tabel-histori">
+                        <thead>
+                            <tr>
+                                <th>Nama Produk</th>
+                                <th>Jenis Asuransi</th>
+                                <th>Tanggal Pembelian</th>
+                                <th>Harga Premi</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabel-histori-body">
+                            </tbody>
+                    </table>
+
+                    <div id="histori-kosong" style="display: none; text-align: center; padding: 40px; border: 1px solid  #ddd; border-radius: 5px;">
+                        <p>Anda belum memiliki riwayat pembelian.</p>
+                        <a href="index.html" class="tombol-signup" style="text-decoration: none; margin-top: 15px; display: inline-block;">Cari Produk Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="payment-success-popup" class="popup-overlay" style="display: none;">
+    <div class="popup-box">
+        <span class="popup-close">&times;</span>
+        <i class="fas fa-check-circle popup-icon success"></i>
+        <p><strong>Pembayaran Berhasil!</strong></p>
+        <p style="margin-top:-10px; font-size: 0.9rem;">Terima kasih telah melakukan pembelian.</p>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
